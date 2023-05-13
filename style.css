@@ -210,12 +210,10 @@ margin: 0 20px;
     margin-top: 20%;
 }
 .big-box{
-    grid-column: auto;
-    grid-row: auto;
+   flex-direction: column;
+   align-items: center;
 }
-.big-box img{
-    height: auto;
-}
+
 /*REQUEST*/
 #request .page-title{
     margin-top: 40px;
