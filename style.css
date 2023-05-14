@@ -209,12 +209,29 @@ margin: 0 20px;
 .list-content{
     margin-top: 20%;
 }
-.big-box{
-   flex-direction: column;
-   width:100%;
-   margin-bottom:30px;
+.grid{
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
 }
-
+.big-box{
+    grid-column: auto;
+    grid-row: auto;
+ }
+.big-box img{
+    height: auto;
+}
+.youtube_wrap{
+    flex-direction: column;
+    padding-top: 56.25%;
+    width: 100%;
+    position: relative;
+}
+.youtube_wrap iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
 
 /*REQUEST*/
 #request .page-title{
@@ -225,6 +242,7 @@ input[type="text"],
 input[type="email"],
 textarea{
     max-width: 100%;
+}
 }
 /* 店舗情報・地図/SNS
 #location .wrapper,
@@ -239,4 +257,3 @@ textarea{
 .sns-box{
     margin-bottom: 30px;
 } */
-}
